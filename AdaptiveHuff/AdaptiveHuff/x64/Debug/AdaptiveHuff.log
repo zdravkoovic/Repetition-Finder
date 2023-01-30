@@ -1,3 +1,3 @@
 ﻿  main.cpp
-C:\Users\AleksandarIlic\Desktop\AdaptiveHuff\AdaptiveHuff\Keys.h(61,18): warning C4312: 'type cast': conversion from 'int' to 'char *' of greater size
+C:\Users\AleksandarIlic\Desktop\AdaptiveHuff\AdaptiveHuff\main.cpp(120,20): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
   AdaptiveHuff.vcxproj -> C:\Users\AleksandarIlic\Desktop\AdaptiveHuff\x64\Debug\AdaptiveHuff.exe

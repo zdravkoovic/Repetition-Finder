@@ -27,10 +27,10 @@ Keys::Keys()
 
 Keys::~Keys()
 {
-	for (int i = 0; i < 1000; i++) {
-		delete this->huffman[i], this->repetition[i], this->repCharacters;
-	}
-	delete[] this->huffman, this->repetition, repCharacters;
+	//for (int i = 0; i < 1000; i++) {
+	//	delete this->huffman[i], this->repetition[i], this->repCharacters[i];
+	//}
+	//delete[] this->huffman, this->repetition, repCharacters;
 }
 
 inline void Keys::PutCode(bool rep, char* code, int index, char* data)
@@ -55,9 +55,13 @@ inline char* Keys::GetCharacter(bool rep, char* code)
 	}
 	else {
 		int i = 0;
-		while (!strcmp(code, this->huffman[i])) {
+		while (i < 1000 && strcmp(code, this->huffman[i])) {
 			i++;
 		}
-		return (char*)i;
+		if (i == 1000) return (char*)"~";
+		char* c = new char;
+		c[0] = (char)i;
+		c[1] = '\0';
+		return c;
 	}
 }

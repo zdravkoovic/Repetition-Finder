@@ -9,6 +9,7 @@ AHT::AHT()
 
 AHT::~AHT()
 {
+
 }
 
 Node* AHT::GetDataNode(int data, Node* node)
